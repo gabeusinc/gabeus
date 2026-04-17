@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks! — Gabe US Incorporated</title>
+  <meta name="description" content="Your message was received. We'll reply within one business day.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__brand">
+      <img src="images/logo-mark.png" alt="" class="nav__brand-mark">
+      <span>Gabe US <strong style="font-weight:800; color:var(--red)">Incorporated</strong></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="private-label.html" class="nav__link">Private Label</a></li>
+        <li><a href="faq.html" class="nav__link">FAQ</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary nav__cta">Get a quote <span class="arrow">→</span></a>
+    <button class="nav__toggle" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('is-open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section class="section section--cream" style="min-height: 70vh; display:flex; align-items:center;">
+  <div class="container" style="text-align:center; max-width: 640px;">
+    <div style="width:96px; height:96px; margin:0 auto var(--sp-8); border-radius:50%; background:var(--red); display:grid; place-items:center;">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <span class="eyebrow">Message received</span>
+    <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: var(--sp-4);">
+      Thanks — we'll be in touch <span class="accent" style="color:var(--red)">within one business day</span>.
+    </h1>
+    <p class="lead" style="margin-bottom: var(--sp-10);">
+      Your project details went straight to our team. If it's urgent or you forgot to mention something, just reply to the confirmation email or write directly to <a href="mailto:contact@gabeus.com" style="color:var(--red); font-weight:600;">contact@gabeus.com</a>.
+    </p>
+    <div style="display:flex; gap:var(--sp-3); justify-content:center; flex-wrap:wrap;">
+      <a href="index.html" class="btn btn--primary">Back to home <span class="arrow">→</span></a>
+      <a href="faq.html" class="btn btn--ghost">Browse the FAQ</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand-col">
+        <div class="footer__brand">
+          <img src="images/logo-mark.png" alt="" class="nav__brand-mark">
+          <span>Gabe US Incorporated</span>
+        </div>
+        <p class="footer__tag">FDA-registered, cGMP-compliant gummy contract manufacturer in Lorton, Virginia.</p>
+        <p class="footer__address">7951 Angleton Ct Ste 1A<br>Lorton, VA 22079</p>
+      </div>
+      <div><h5>Company</h5><ul class="footer__list"><li><a href="about.html">About us</a></li><li><a href="services.html">Services</a></li><li><a href="private-label.html">Private label</a></li></ul></div>
+      <div><h5>Resources</h5><ul class="footer__list"><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Get in touch</h5><ul class="footer__list"><li><a href="mailto:contact@gabeus.com">contact@gabeus.com</a></li><li><span>Mon–Fri · 9am–5pm ET</span></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year">2026</span> Gabe US Incorporated. All rights reserved.</div>
+      <div>Made in the USA · FDA Registered · cGMP Certified</div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

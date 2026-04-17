@@ -1,0 +1,20 @@
+# Netlify _headers — set HTTP headers for security and caching
+
+# Security headers on every page
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Long cache for images (change filename if you replace an image)
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Long cache for CSS (cache-bust by renaming if you change it)
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Long cache for JS
+/js/*
+  Cache-Control: public, max-age=31536000, immutable

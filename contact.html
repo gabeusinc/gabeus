@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Gabe US Incorporated</title>
+  <meta name="description" content="Get in touch with Gabe US Incorporated. FDA-registered gummy manufacturer in Lorton, Virginia. We reply to every inquiry within one business day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__brand">
+      <img src="images/logo-mark.png" alt="" class="nav__brand-mark">
+      <span>Gabe US <strong style="font-weight:800; color:var(--red)">Incorporated</strong></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="private-label.html" class="nav__link">Private Label</a></li>
+        <li><a href="faq.html" class="nav__link">FAQ</a></li>
+        <li><a href="contact.html" class="nav__link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary nav__cta">Get a quote <span class="arrow">→</span></a>
+    <button class="nav__toggle" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('is-open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Page banner -->
+<section class="page-banner page-banner--cream">
+  <div class="container">
+    <div class="page-banner__inner">
+      <span class="eyebrow page-banner__eyebrow">Contact</span>
+      <h1 class="page-banner__title">
+        Let's build your <span class="accent">next gummy SKU</span> together.
+      </h1>
+      <p class="page-banner__sub">
+        Tell us about your project — target formulation, volume, timeline or just the rough idea. Our team replies within one business day with next steps, typical pricing ranges and any clarifying questions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Form + info -->
+<section class="section">
+  <div class="container">
+    <div class="split" style="align-items:start;">
+      <!-- Contact form -->
+      <div>
+        <form class="form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/thank-you.html">
+          <input type="hidden" name="form-name" value="contact">
+          <!-- Honeypot for spam bots — real users won't fill this -->
+          <p style="display:none;">
+            <label>Do not fill if you are human: <input name="bot-field"></label>
+          </p>
+          <div class="form__row">
+            <div class="field">
+              <label for="first-name">First name</label>
+              <input id="first-name" name="first-name" type="text" required placeholder="Jane">
+            </div>
+            <div class="field">
+              <label for="last-name">Last name</label>
+              <input id="last-name" name="last-name" type="text" required placeholder="Doe">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@brand.com">
+            </div>
+            <div class="field">
+              <label for="company">Company <span style="color:var(--muted); text-transform:none; letter-spacing:0;">(optional)</span></label>
+              <input id="company" name="company" type="text" placeholder="Your brand or company">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="project-type">Project type</label>
+              <select id="project-type" name="project-type" required>
+                <option value="">Select project type</option>
+                <option value="Private Label">Private Label</option>
+                <option value="Custom Formulation">Custom Formulation</option>
+                <option value="Contract Manufacturing">Contract Manufacturing</option>
+                <option value="Other">Other / Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span style="color:var(--muted); text-transform:none; letter-spacing:0;">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000">
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" required placeholder="Gummy format, target active ingredients, estimated volume, launch timeline — anything you can share."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="justify-self:start;">
+            Request a quote <span class="arrow">→</span>
+          </button>
+          <p style="font-size:var(--fs-xs); color:var(--muted); margin:0;">We reply within one business day. Your information is kept confidential and never shared.</p>
+        </form>
+      </div>
+
+      <!-- Info sidebar -->
+      <div>
+        <div style="background: var(--cream); border-radius: var(--r-lg); padding: var(--sp-8); margin-bottom: var(--sp-6);">
+          <span class="eyebrow">Direct</span>
+          <h3 style="margin-bottom: var(--sp-6);">Prefer email?</h3>
+          <a href="mailto:contact@gabeus.com" style="font-size: var(--fs-lg); font-weight:700; color:var(--red); display:inline-block; margin-bottom: var(--sp-6);">
+            contact@gabeus.com
+          </a>
+          <p style="margin:0; color:var(--muted);">Send us the same details as the form — we'll respond with next steps.</p>
+        </div>
+
+        <div style="background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); padding: var(--sp-8); margin-bottom: var(--sp-6);">
+          <span class="eyebrow">Visit</span>
+          <h3 style="margin-bottom: var(--sp-4);">Our facility</h3>
+          <p style="margin:0 0 var(--sp-4);">
+            7951 Angleton Ct Ste 1A<br>
+            Lorton, VA 22079<br>
+            United States
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=7951+Angleton+Ct+Ste+1A+Lorton+VA+22079"
+             target="_blank" rel="noopener"
+             style="font-weight:600; color:var(--red); font-size:var(--fs-sm);">
+            Open in Google Maps →
+          </a>
+        </div>
+
+        <div style="background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); padding: var(--sp-8);">
+          <span class="eyebrow">Hours</span>
+          <h3 style="margin-bottom: var(--sp-4);">When we're here</h3>
+          <p style="margin:0;">
+            <strong style="color:var(--ink);">Monday – Friday</strong><br>
+            9:00 AM – 5:00 PM ET<br>
+            <span style="color:var(--muted); font-size:var(--fs-sm);">Inquiries outside business hours are answered next business day.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What to expect -->
+<section class="section section--mint">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">What to expect</span>
+      <h2>A dedicated account manager — from your first email to <em class="italic">your first shipment</em>.</h2>
+    </div>
+    <div class="card-grid card-grid--4">
+      <div class="card">
+        <div class="card__icon card__icon--pink">⏱️</div>
+        <h3 class="card__title">One business day</h3>
+        <p class="card__body">That's our target reply time on any inquiry. Quote or clarifying questions — whichever the project needs first.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon card__icon--peach">🔒</div>
+        <h3 class="card__title">Mutual NDA</h3>
+        <p class="card__body">Signed before any technical detail is exchanged. Your concept, formula and IP stay protected.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon card__icon--butter">🧑‍🔬</div>
+        <h3 class="card__title">Formulation-led sales</h3>
+        <p class="card__body">You'll talk to someone who can actually answer formulation and compliance questions — not just take a message.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon card__icon--sky">🏭</div>
+        <h3 class="card__title">Facility visits welcome</h3>
+        <p class="card__body">Serious buyers are invited to tour our Lorton, Virginia facility. See the line, meet the QC team, verify what you're buying.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Made-in-USA callout -->
+<section class="section">
+  <div class="container">
+    <div class="cta-block" style="background: var(--cream);">
+      <div class="cta-block__inner">
+        <span class="eyebrow">Made in the USA</span>
+        <h2>An FDA-registered, cGMP facility just outside <em class="italic">Washington, D.C.</em></h2>
+        <p>Every gummy we make is manufactured, tested and packed in Lorton, Virginia. Never offshored, never sub-contracted — the story your retailers and end customers actually want to hear.</p>
+        <div style="display:flex; gap:var(--sp-3); justify-content:center; flex-wrap:wrap;">
+          <a href="about.html" class="btn btn--primary">About our approach <span class="arrow">→</span></a>
+          <a href="services.html" class="btn btn--ghost">See our capabilities</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand-col">
+        <div class="footer__brand">
+          <img src="images/logo-mark.png" alt="" class="nav__brand-mark">
+          <span>Gabe US Incorporated</span>
+        </div>
+        <p class="footer__tag">FDA-registered, cGMP-compliant gummy contract manufacturer in Lorton, Virginia. Private label, custom formulation, and scale-ready manufacturing for ambitious brands.</p>
+        <p class="footer__address">7951 Angleton Ct Ste 1A<br>Lorton, VA 22079</p>
+      </div>
+      <div><h5>Company</h5><ul class="footer__list"><li><a href="about.html">About us</a></li><li><a href="services.html">Services</a></li><li><a href="private-label.html">Private label</a></li></ul></div>
+      <div><h5>Resources</h5><ul class="footer__list"><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Get in touch</h5><ul class="footer__list"><li><a href="mailto:contact@gabeus.com">contact@gabeus.com</a></li><li><span>Mon–Fri · 9am–5pm ET</span></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year">2026</span> Gabe US Incorporated. All rights reserved.</div>
+      <div>Made in the USA · FDA Registered · cGMP Certified</div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

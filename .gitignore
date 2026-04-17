@@ -1,0 +1,31 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Editor directories
+.vscode/
+.idea/
+
+# Netlify build artifacts (we don't build, but just in case)
+.netlify/
+netlify/
+dist/
+build/
+
+# Environment files (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Node modules (we don't use npm, but belt-and-suspenders)
+node_modules/
+
+# Python cache (for one-off helper scripts)
+__pycache__/
+*.pyc
+
+# Logs
+*.log
