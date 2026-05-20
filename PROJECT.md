@@ -7,14 +7,29 @@
 ## What this is
 
 Marketing website for **Gabe US Incorporated** — an FDA-registered, cGMP-compliant
-gummy contract manufacturer based in Lorton, Virginia. B2B lead generation site:
-the goal is to get emerging supplement brands / retailers / Amazon sellers to
-submit the contact form for a quote.
+gummy contract manufacturer with **two integrated facilities**: Lorton, Virginia (US)
+and Guangzhou, China (sister company **Gabe Health Technology Co., Ltd.** /
+gabehealth.com). B2B lead generation site: the goal is to get emerging supplement
+brands / retailers / Amazon sellers to submit the contact form for a quote.
 
 **Owner email:** jason@bigboxretailer.com
 **Company email:** contact@gabeus.com
-**Address:** 7951 Angleton Ct Ste 1A, Lorton, VA 22079
+**USA address:** 7951 Angleton Ct Ste 1A, Lorton, VA 22079 (FDA Registered, cGMP, 21 CFR 111)
+**China address:** No. 3 Yuantian Road, Huashan Town, Huadu District, Guangzhou (BRCGS, HACCP, ISO)
+**Sister site:** https://www.gabehealth.com (China-facing)
 **Production URL:** https://gabeus.com (deployed via Netlify)
+
+### Positioning facts (use these consistently across pages)
+- 10+ years of R&D and production experience
+- 500+ team members across US and Guangzhou facilities
+- 100 engineers
+- 50 gummy production lines, 20 capsule machines
+- 4 dosage-form workshops (gummy, capsule, tablet, drop)
+- Class 100,000 cleanroom standards at both sites
+- Annual capacity: 1.5M kg gummies, 8M+ capsules & tablets, 2M oral liquids
+- Certifications: **FDA Registered, cGMP, 21 CFR 111** (US) + **BRCGS, HACCP, ISO** (Guangzhou)
+- Beyond gummies, Guangzhou produces: capsules, tablets, oral drops, powders, softgels, pastes
+  (gummy is still the headline product for gabeus.com)
 
 ## Tech stack
 
@@ -171,6 +186,17 @@ These came up in conversation and were decided — don't re-litigate:
 - ✅ **Brand name only two forms:** "Gabe US" and "Gabe US Incorporated".
   Never "Gabe US Inc." or "Gabe US LLC".
 - ✅ **No phone number** in footer/contact (user said so).
+- ✅ **Dual-facility positioning** — both US (Lorton, VA / FDA / cGMP) and China
+  (Guangzhou / BRCGS / HACCP / ISO) facilities are mentioned together. Sister
+  company in China is **Gabe Health Technology Co., Ltd.** (gabehealth.com).
+  Content was aligned with gabehealth.com on 2026-05-20.
+- ✅ **Gummy stays the headline product** on gabeus.com. Other dosage forms
+  (capsules, tablets, drops, powders, softgels) get mentioned as capability
+  extensions via the Guangzhou facility, not as primary positioning.
+- ✅ **B2B customer segmentation** on private-label page kept as-is (Health &
+  Wellness Brands / Nutraceutical / Retail Chains / Amazon Sellers). Did NOT
+  swap for gabehealth's consumer-segment framing (Fitness / Pharma / Elderly /
+  Female Beauty) — that's for the China site's audience, not US.
 
 ## How to work on this project efficiently
 
